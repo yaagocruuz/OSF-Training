@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Projeto Final OSF</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+		crossorigin="anonymous">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+		crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
+		crossorigin="anonymous">
+	</script>
+</head>
+
+<body>
+	<header>
+		<nav class="primary-bg navbar navbar-expand-lg 
+				navbar-dark bg-dark">
+			<a href="" class="navbar-brand"> OSF </a>
+			<button class="navbar-toggler" type="button"
+				data-toggle="collapse"
+				data-target="#navbarNavDropdown"
+				aria-controls="navbarNavDropdown"
+				aria-expanded="false"
+				aria-label="Toggle Navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a href="/list" class="nav-link">
+							List
+						</a>
+					</li>
+					<li class="nav-item active">
+						<a href="/search" class="nav-link">
+							Search
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="/register" class="nav-link">
+							Register
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav> 
+	</header>
+    
+    <form class="container" id="custom-form" action="/search" method="POST">
+			<h2>Search contact</h2>
+			<div class="form-group">
+				<label for="id">Id: </label>
+				<input class="form-control" placeholder="Digite o id" type="text" name="id">
+			</div>
+			<button class="btn btn-primary" type="submit">Submit</button>
+		</form>
+
+	<footer class="pt-4 my-md-3 border-top">
+		<div class="row">
+			<div class="col-12 col-md">
+		   		<a href="https://www.github.com/yaagocruuz"> <small class="d-block mb-3 text-muted">Desenvolvido por Yago Cruz</small> </a>
+			</div>
+		</div>
+	</footer>
+	
+</body>
+
+</html>
